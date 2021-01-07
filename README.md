@@ -1,10 +1,12 @@
 # static-responsive-portfolio-website
-This is my first static responsive website for educational purpose , I made it by only using basic HTML/CSS Javascript Bootstrap for a demonstration purpose how we can use it for any kind of business.
+## This is my first static responsive website for educational purpose , I made it by only using basic HTML/CSS Javascript Bootstrap for a demonstration purpose how we can use it for any kind of business.
 
-HERE IS TH HOMEPAGE LOOK
+
+
+ - **HERE IS TH HOMEPAGE LOOK**
 
 ![homepage1](https://user-images.githubusercontent.com/52366547/103858039-a4559a00-50dd-11eb-8cba-031a05b4d659.jpg)
-second page ABOUT-US
+**- second page ABOUT-US**
 
 ![aboutuspage](https://user-images.githubusercontent.com/52366547/103858239-00b8b980-50de-11eb-97dc-100e81c1dfe0.jpg)
 CONTACT-US PAGE

@@ -1,5 +1,18 @@
 # static-responsive-portfolio-website
 ## This is my first static responsive website for educational purpose , I made it by only using basic HTML/CSS Javascript Bootstrap for a demonstration purpose how we can use it for any kind of business.
+Tech used -
+1. HTML5
+2. CSS3
+3. JS & jQuery
+4. Bootstrap
+
+Software Used –
+1. Visual Studio Code Text Editor
+2. Browser (preferably chrome)
+
+I developed a complete porfolio business website from scratch using HTML5, CSS3, jQuery and bootstrap framework. 
+This website is going to be a tech company business website which will be professional and mobile optimized. 
+I used bootstrap framework a lot for styling and responsive mobile optimizations.
 
 
 

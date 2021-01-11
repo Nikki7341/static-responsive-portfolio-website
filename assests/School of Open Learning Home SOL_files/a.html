@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Student Provisional
+</title><link href="a_data/blank_page.css" rel="stylesheet" type="text/css">
+    <script src="a_data/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="a_data/jquery_002.js"></script>
+
+    <script type="text/javascript">
+    jQuery(function($) { 
+          //$.mask.definitions['~']='[+-]';     
+          //$("#txtSOLRollNo").mask("99-9-99-999999");      
+          $('#txtSolRollNo').mask("99-9-99-999999");      
+       });
+       
+       function isNumberKey(evt)
+       {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+              return false;
+
+        return true;
+        }
+             
+    </script>
+</head>
+<body>
+    <form name="form1" method="post" action="ProvCerti.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTQwODU2ODQ3Mw9kFgICAw9kFgICBQ8QDxYGHg1EYXRhVGV4dEZpZWxkBQpURVhUX0ZJRUxEHg5EYXRhVmFsdWVGaWVsZAULVkFMVUVfRklFTEQeC18hRGF0YUJvdW5kZ2QQFQYJMjAxNC0yMDE1CTIwMTUtMjAxNgkyMDE2LTIwMTcJMjAxNy0yMDE4CTIwMTgtMjAxOQkyMDE5LTIwMjAVBgIxNAIxNQIxNgIxNwIxOAIxORQrAwZnZ2dnZ2dkZGQZZvpyXqxUtACcZUw7Sc89n/tuTw==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="a_data/WebResource_002.js" type="text/javascript"></script>
+
+
+<script src="a_data/WebResource.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="983C10C7">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCgKUparTCwLPsJjFCQLPsJTFCQLPsJDFCQLPsIzFCQLPsMjGCQLPsMTGCQLbhv7VDwLgkur0AQL6nOHPBEIGHzgurXOKZojfk7bdcpwyw+Q1">
+</div>
+    <center>
+        <div id="content" style="width: 80%;">
+            <div id="sub">
+                <div id="ValidationSummary1" style="color:Red;font-weight:normal;display:none;">
+
+</div>
+                <span id="LblMsg" style="color: Red; font-weight: bold;"></span>
+                <br>
+                <!-- commented by Ramesh on September 28, 2015
+                <p style="text-align: left;">
+                    <img src="Images/double-arrow-black.png" alt="">
+                    <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: medium;">
+                        Student Provisional Certificate</span>
+               </p>
+               -->
+                <table style="width:100%; float: left; text-align:left; width: 97%; padding-right: 10px; border: 1px solid #e0e0e0; margin-left:5px; margin-bottom:15px; padding-left:15px; padding-top:15px;" width="100%">
+                    <tbody><tr style="height:40px;">
+                        <td style="width:40%; text-align:right;"><label>Session:&nbsp;</label></td>
+                        <td style="width:60%; text-align:left;">
+                            <select name="ddlSession" id="ddlSession" style="width:200px;">
+	<option value="14" selected="selected">2014-2015</option>
+	<option value="15">2015-2016</option>
+	<option value="16">2016-2017</option>
+	<option value="17">2017-2018</option>
+	<option value="18">2018-2019</option>
+	<option value="19">2019-2020</option>
+
+</select>
+                            <span id="RFVSession" style="color:Red;visibility:hidden;">*</span>
+                        </td>
+                    </tr>
+                    <tr style="height:40px;">
+                        <td style="text-align:right;"><label>SOL Roll No.:&nbsp;</label></td>
+                        <td style="text-align:left;">
+                            <input name="txtSolRollNo" type="text" maxlength="14" id="txtSolRollNo" placeholder="01-1-01-001000" style="width:150px;">
+                            <span id="RequiredFieldValidator1" style="color:Red;font-weight:bold;visibility:hidden;">*</span>
+                            <span id="RegularExpressionValidator1" style="color:Red;font-weight:bold;visibility:hidden;">*</span>
+                        </td>
+                    </tr>
+                    <tr style="height:40px;">
+                        <td style="text-align:right;"><label>Exam Roll No.:&nbsp;</label></td>
+                        <td style="text-align: left;">
+                            <input name="txtExamRollNo" type="text" maxlength="10" id="txtExamRollNo" onkeypress="return isNumberKey(event)" style="width:150px;">
+                            <span id="RequiredFieldValidator2" style="color:Red;font-weight:bold;visibility:hidden;">*</span>
+                            <span id="RegularExpressionValidator2" style="color:Red;font-weight:bold;visibility:hidden;">*</span>
+                        </td>
+                    </tr>
+                    <tr style="height:40px;">
+                        <td colspan="2" style="text-align:center;">
+                            <input type="submit" name="btnView" value="View" onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("btnView", "", true, "", "", false, false))' id="btnView">                            
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+    </center>
+    
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("ValidationSummary1"));
+var Page_Validators =  new Array(document.getElementById("RFVSession"), document.getElementById("RequiredFieldValidator1"), document.getElementById("RegularExpressionValidator1"), document.getElementById("RequiredFieldValidator2"), document.getElementById("RegularExpressionValidator2"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ValidationSummary1 = document.all ? document.all["ValidationSummary1"] : document.getElementById("ValidationSummary1");
+ValidationSummary1.headertext = "Message";
+ValidationSummary1.showmessagebox = "True";
+ValidationSummary1.showsummary = "False";
+ValidationSummary1.displaymode = "List";
+var RFVSession = document.all ? document.all["RFVSession"] : document.getElementById("RFVSession");
+RFVSession.controltovalidate = "ddlSession";
+RFVSession.validationGroup = "ExportPDF";
+RFVSession.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RFVSession.initialvalue = "";
+var RequiredFieldValidator1 = document.all ? document.all["RequiredFieldValidator1"] : document.getElementById("RequiredFieldValidator1");
+RequiredFieldValidator1.controltovalidate = "txtSolRollNo";
+RequiredFieldValidator1.focusOnError = "t";
+RequiredFieldValidator1.errormessage = "Please Enter your SOL Roll Number";
+RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator1.initialvalue = "";
+var RegularExpressionValidator1 = document.all ? document.all["RegularExpressionValidator1"] : document.getElementById("RegularExpressionValidator1");
+RegularExpressionValidator1.controltovalidate = "txtSolRollNo";
+RegularExpressionValidator1.focusOnError = "t";
+RegularExpressionValidator1.errormessage = "SOL Roll No is invalid";
+RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator1.validationexpression = "\\d{2}(-\\d{1})(-\\d{2})(-\\d{6})?";
+var RequiredFieldValidator2 = document.all ? document.all["RequiredFieldValidator2"] : document.getElementById("RequiredFieldValidator2");
+RequiredFieldValidator2.controltovalidate = "txtExamRollNo";
+RequiredFieldValidator2.focusOnError = "t";
+RequiredFieldValidator2.errormessage = "Please Enter your Exam Roll Number";
+RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator2.initialvalue = "";
+var RegularExpressionValidator2 = document.all ? document.all["RegularExpressionValidator2"] : document.getElementById("RegularExpressionValidator2");
+RegularExpressionValidator2.controltovalidate = "txtExamRollNo";
+RegularExpressionValidator2.focusOnError = "t";
+RegularExpressionValidator2.errormessage = "Please Enter Only Numbers";
+RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator2.validationexpression = "^\\d+$";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+
+
+</body></html>
